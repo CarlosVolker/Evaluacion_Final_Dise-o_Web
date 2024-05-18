@@ -18,7 +18,10 @@
         </nav>
     </header>
     <main id="content">
+    
+<!-- Secciones de la página la cual va cambiando con JavaScript --> 
 
+        <!--Aqui comienza la seccion Home-->
         <section id="home">
             <h2>Mis Pasiones</h2>
             <div class="card">
@@ -53,6 +56,7 @@
             </div>
         </section>
         
+        <!--Aqui comienza la seccion Gallery--> 
         <section id="gallery" >
             <div class="images">
                 <div id="imagen1" class="card">
@@ -70,17 +74,18 @@
             </div>
         </section>
         
+        <!--Aqui comienza la seccion contact-->
         <section id="contact">
             <h2>Formulario de Contacto</h2>
             <div>
-                <form>
+                <form id="formularioContacto">
                     <div>
                         <label for="nombre">Nombre:</label>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="nombre" name="name">
                     </div>
                     <div>
                         <label for="correo">Correo electrónico:</label>
-                        <input type="email" id="correo" name="email">
+                        <input type="email" id="correo" name="email" >
                     </div>
                     <div>
                         <label for="mensaje">Mensaje: (Máximo 300 caracteres)</label>
