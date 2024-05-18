@@ -88,24 +88,25 @@ h2 {
 }
 
 .card:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(28, 212, 0, 0.5);
 }
 
 /* SECCIÓN CON LAS IMÁGENES */
 .images {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     gap: 10px;
     justify-content: center;
+    align-items: center;
     height: auto;
 }
 
 .images .card {
     border-radius: 10%;
-    width: auto;
-    height: auto;
+    width: 300px;
+    height: 300px;
+    margin: auto;
 }
 
 #gallery .card img {
