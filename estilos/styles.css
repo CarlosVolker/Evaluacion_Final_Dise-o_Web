@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TODOS LOS ELEMENTOS DENTRO DEL HEADER */
+header {
+    background: linear-gradient(45deg, #e3e3e3, #00851f, #aa04e7, #2A70B2);
+    background-size: 400% 400%;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.9s ease, box-shadow 0.9s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #ffffff;
+    color: #4A90E2;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* ============================================= */
+
+/* AQUÍ COMIENZA EL MAIN */
+main {
+    padding: 1% 4% 5% 4%;
+    background-color: #f1f1f1;
+}
+
+section {
+    margin-bottom: 2%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#home .card {
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(28, 212, 0, 0.5);
+}
+
+/* SECCIÓN CON LAS IMÁGENES */
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    height: auto;
+}
+
+.images .card {
+    border-radius: 10%;
+    width: auto;
+    height: auto;
+}
+
+#gallery .card img {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+/* SECCIÓN CONTACTO */
+#contact {
+    text-align: center;
+    margin: 20px;
+}
+
+#contact form {
+    display: inline-block;
+    text-align: left;
+}
+
+#contact form div {
+    margin-bottom: 15px;
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 150%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact form textarea {
+    height: 150px; /* Ajusta esta altura según tus necesidades */
+    resize: none;
+}
+
+#contact form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(45deg, #e3e3e3, #00851f, #aa04e7, #2A70B2);
+    background-size: 400% 400%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    animation: gradientAnimation 15s ease infinite;
+    transition: transform 0.3s ease;
+}
+
+#contact form button:hover {
+    transform: scale(1.05);
+}
+
+
+

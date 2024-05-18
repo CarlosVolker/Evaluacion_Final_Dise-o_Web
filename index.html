@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora Mi Mundo Creativo</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="main-title"></h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showContent('home', 'Te Invito a Explorar Mis Pasatiempos')">Inicio</a></li>
+                <li><a href="#" onclick="showContent('gallery', 'Mi Mundo a Tus Vista')">Galería</a></li>
+                <li><a href="#" onclick="showContent('contact', 'Contacto Conmigo')">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content">
+
+        <section id="home">
+            <h2>Mis Pasiones</h2>
+            <div class="card">
+                <h3>Patinar</h3>
+                <p>Me apasiona patinar por la ciudad, y claro,
+                     como no aprovechar si Valdivia es uno de los
+                      lugares para vivir mas lindos de Chile.
+                    Es un deporte dificil, peligroso pero apasionante,
+                sobre todo al practicar cosas nuevas.</p>
+            </div>
+            <div class="card">
+                <h3>Aprender</h3>
+                <p>Encuentro muy interesante el mundo de la tecnologia, 
+                    sobre todo, el mundo de la Telecomunicaciones, ya que 
+                    esa es mi área en la que trabajo.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Viajar</h3>
+                <p>Dentro de las cosas que me apasionan, amo poder viajar 
+                    a lugares nuevos, donde la naturaleza de la zona sur de 
+                    Chile predomine. Acampar por días en aquillos lugares tan 
+                    lindos que nos ofrece nuestro país.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Gamming</h3>
+                <p>Tambien me gusta bastante el mundo Gamming, por lo cual 
+                    cuando no puedo realizar mis otras pasiones, me pongo a jugar 
+                    con mis amigos a distintas Entregas en línea.
+                </p>
+            </div>
+        </section>
+        
+        <section id="gallery" >
+            <div class="images">
+                <div id="imagen1" class="card">
+                    <img src="imagenes/image1.jpg" alt="Patinar">
+                </div>
+                <div id="imagen2" class="card">
+                    <img src="imagenes/image2.jpg" alt="Aprender">
+                </div>
+                <div id="imagen3" class="card">
+                    <img src="imagenes/image3.jpg" alt="Viajar">
+                </div>
+                <div id="imagen4" class="card">
+                    <img src="imagenes/image4.jpg" alt="Gamming">
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Formulario de Contacto</h2>
+            <div>
+                <form>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="email">
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje: (Máximo 300 caracteres)</label>
+                        <textarea id="mensaje" name="mensaje" maxlength="300"></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
