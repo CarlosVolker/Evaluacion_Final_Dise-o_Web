@@ -15,6 +15,7 @@ header {
     animation: gradientAnimation 10s ease infinite;
 }
 
+/*Seccion clave para hacer animacion con el gradiante al header y botón*/
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
