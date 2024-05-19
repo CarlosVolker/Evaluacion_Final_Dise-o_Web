@@ -83,7 +83,6 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(28, 212, 0, 0.5);
 }
 
-
 #home .card {
     padding: 1%;
     display: flex;
@@ -92,12 +91,12 @@ h2 {
     margin-left: 100px;
     margin-right: 100px;
 }
+
+/*Accion que realiza el card del home cuando el mouse pasa por encima*/
 #home .card:hover {
     transform: scale(1.03);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(28, 212, 0, 0.5);
 }
-
-
 
 /* SECCIÓN CON LAS IMÁGENES */
 .images {
@@ -180,6 +179,3 @@ h2 {
 #contact form button:hover {
     transform: scale(1.05);
 }
-
-
-
